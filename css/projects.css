@@ -1,11 +1,10 @@
 body {
     background-color: #212121;
+    display: block; 
 }
 
 .project_knockout {
     position: absolute;
-    @media screen { .nomobile { display: block; } }
-    @media handheld { .nomobile { display: none; } }
     bottom: 73%;
     left: 1%;
     width: 280px;
@@ -17,8 +16,6 @@ body {
 
 .project_knockout a {
     position: relative;
-    @media screen { .nomobile { display: block; } }
-    @media handheld { .nomobile { display: none; } }
     top: 10%;
     left: 5%;
     color: #d8d8d8;
@@ -27,8 +24,6 @@ body {
 }
 
 .project_knockout p {
-    @media screen { .nomobile { display: block; } }
-    @media handheld { .nomobile { display: none; } }
     position: relative;
     top: 5%;
     left: 5%;
@@ -44,8 +39,6 @@ body {
 }
 
 .project_tools {
-    @media screen { .nomobile { display: block; } }
-    @media handheld { .nomobile { display: none; } }
     position: absolute;
     display: block;
     bottom: 73%;
@@ -58,8 +51,6 @@ body {
 }
 
 .project_tools a {
-    @media screen { .nomobile { display: block; } }
-    @media handheld { .nomobile { display: none; } }
     position: relative;
     top: 10%;
     left: 5%;
@@ -69,8 +60,6 @@ body {
 }
 
 .project_tools p {
-    @media screen { .nomobile { display: block; } }
-    @media handheld { .nomobile { display: none; } }
     position: relative;
     top: 5%;
     left: 5%;
@@ -86,8 +75,6 @@ body {
 }
 
 .project_website {
-    @media screen { .nomobile { display: block; } }
-    @media handheld { .nomobile { display: none; } }
     position: absolute;
     display: block;
     bottom: 73%;
@@ -100,8 +87,6 @@ body {
 }
 
 .project_website a {
-    @media screen { .nomobile { display: block; } }
-    @media handheld { .nomobile { display: none; } }
     position: relative;
     top: 10%;
     left: 5%;
@@ -111,8 +96,6 @@ body {
 }
 
 .project_website p {
-    @media screen { .nomobile { display: block; } }
-    @media handheld { .nomobile { display: none; } }
     position: relative;
     top: 5%;
     left: 5%;
@@ -128,8 +111,6 @@ body {
 }
 
 h1 {
-    @media screen { .nomobile { display: block; } }
-    @media handheld { .nomobile { display: none; } }
     text-align: center;
     color: whitesmoke;
     font-family: 'Open Sans', sans-serif;
