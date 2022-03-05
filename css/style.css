@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #262525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 25vh;
+}
+
+.title {
+    display: inline-flex;
+    vertical-align: text-top;
+}
+
+.title.dynamic-text {
+    margin-left: 15px;
+    line-height: 80px;
+    height: 90px;
+    overflow: hidden;
+
+}
+
+.title p {
+    text-align: center;
+    color: #d8d8d8;
+    font-size: 80%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dynamic-text li {
+    list-style: none;
+    font-size: 50px;
+    font-weight: 500;
+    color: #d8d8d8;
+    font-family: 'Open Sans', sans-serif;
+    top: 0;
+    animation: slide 6s steps(1) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-text li span {
+    position: relative;
+}
+
+.dynamic-text li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #262525;
+    border-left: 2px solid white;
+    animation: typing 5s steps(20) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.monitor {
+    width: 500px;
+    height: 300px;
+    background: #000;
+    border-bottom: 30px solid #d8d8d8;
+    border-radius: 10px;
+}
+
+.monitor:before {
+    content: '';
+    width: 70px;
+    height: 60px;
+    background: #bdbdbd;
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: perspective(100px) translateX(-50%) rotateX(25deg) skewX(7deg);
+    z-index: -1;
+    transform-origin: bottom;
+}
+
+.monitor:after {
+    content: '';
+    width: 140px;
+    height: 15px;
+    background: #d8d8d8;
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+    z-index: -1;
+    transform-origin: bottom;
+}
+
+
+
+.monitor span {
+    position: absolute;
+    left: 50%;
+    bottom: 87%;
+    margin-bottom: 15px;
+    transform: translateX(-50%);
+    color: #d8d8d8;
+    size: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.monitor p {
+    top: 80%;
+    margin-top: 17px;
+    margin-left: 7px;
+    margin-right: 7px;
+    text-align: center;
+    color: #d8d8d8;
+    font-size: 80%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.monitor img {
+    position: absolute;
+    bottom: 40%;
+    left: 37%;
+}
+
