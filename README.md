@@ -1,3 +1,5 @@
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/awmeister)
+
 # 🌎 My Website
 
 📂 This a repository for my website's source code files.
