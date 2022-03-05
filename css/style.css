@@ -35,7 +35,7 @@ body {
     color: #d8d8d8;
     font-family: 'Open Sans', sans-serif;
     top: 0;
-    animation: slide 6s steps(1);
+    animation: slide 6s steps(1) infinite;
 }
 
 @keyframes slide {
@@ -56,7 +56,7 @@ body {
     width: 100%;
     background: #262525;
     border-left: 2px solid white;
-    animation: typing 5 steps(20);
+    animation: typing 5s steps(20) infinite;
 }
 
 @keyframes typing {
