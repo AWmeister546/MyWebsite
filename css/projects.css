@@ -4,6 +4,7 @@ body {
 
 .project_knockout {
     position: absolute;
+    display: block;
     bottom: 73%;
     left: 1%;
     width: 280px;
@@ -39,6 +40,7 @@ body {
 
 .project_tools {
     position: absolute;
+    display: block;
     bottom: 73%;
     left: 21%;
     width: 280px;
@@ -74,6 +76,7 @@ body {
 
 .project_website {
     position: absolute;
+    display: block;
     bottom: 73%;
     left: 41%;
     width: 280px;
