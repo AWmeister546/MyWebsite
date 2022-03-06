@@ -137,3 +137,14 @@ h1 {
     font-family: 'Open Sans', sans-serif;
 }
 
+.footer {
+    position: fixed;
+    left: 35px;
+    bottom: 5px;
+    right: 35px;
+    width: 95%;
+    text-align: center;
+    color: lightgray;
+    font-family: 'Open Sans', sans-serif;
+}
+

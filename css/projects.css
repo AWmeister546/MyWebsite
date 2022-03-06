@@ -5,8 +5,8 @@ body {
 .project_knockout {
     position: absolute;
     display: block;
-    top: 92%;
-    left: -200%;
+    bottom: 15%;
+    left: 23%;
     width: 280px;
     height: 110px;
     background: #30363d;
@@ -41,8 +41,8 @@ body {
 .project_tools {
     position: absolute;
     display: block;
-    left: -20%;
-    top: 92%;
+    bottom: 15%;
+    left: 43%;
     width: 280px;
     height: 110px;
     background: #30363d;
@@ -77,8 +77,8 @@ body {
 .project_website {
     position: absolute;
     display: block;
-    top: 92%;
-    left: 160%;
+    bottom: 15%;
+    left: 63%;
     width: 280px;
     height: 110px;
     background: #30363d;
@@ -110,10 +110,10 @@ body {
     left: 3%;
 }
 
-.projects
-
-.projects {
+.projects h1 {
     position: absolute;
-    top: 60%;
+    text-align: center;
+    bottom: 30%;
+    left: 45%;
 }
 
