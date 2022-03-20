@@ -85,7 +85,7 @@ body {
         background: #000;
         border-bottom: 30px solid #d8d8d8;
         border-radius: 10px;
-        margin-top: 25px;
+        margin-top: 30px;
         margin-bottom: 5px;
     }
 }
@@ -100,6 +100,16 @@ body {
         border-bottom: 30px solid #d8d8d8;
         border-radius: 10px;
         margin-bottom: 5px;
+    }
+    .monitor span {
+        position: absolute;
+        left: 50%;
+        bottom: 85%;
+        margin-bottom: 15px;
+        transform: translateX(-50%);
+        color: #d8d8d8;
+        size: 5px;
+        font-family: 'Hammersmith One', sans-serif;
     }
 }
 
