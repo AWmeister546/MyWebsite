@@ -5,12 +5,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 10vh;
 }
 
 .title {
-    display: inline-flex;
+    /* display: inline-flex; */
     vertical-align: text-top;
+    top: 7%;
+    position: absolute;
+    transform: translateY(-50%);
 }
 
 .title.dynamic-text {
@@ -24,7 +26,9 @@ body {
     text-align: center;
     color: #d8d8d8;
     font-size: 80%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
+    position: absolute;
+    top: 5%;
 }
 
 .dynamic-text li {
@@ -73,39 +77,41 @@ body {
 }
 
 .monitor {
+    position: flex;
     width: 500px;
     height: 300px;
+    align-items: center;
     background: #000;
     border-bottom: 30px solid #d8d8d8;
     border-radius: 10px;
-    margin-bottom: unset;
+    margin-bottom: 5px;
 }
 
-/*.monitor:before {*/
-/*    content: '';*/
-/*    width: 70px;*/
-/*    height: 60px;*/
-/*    background: #bdbdbd;*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    bottom: -35px;*/
-/*    transform: perspective(100px) translateX(-50%) rotateX(25deg) skewX(7deg);*/
-/*    z-index: -1;*/
-/*    transform-origin: bottom;*/
-/*}*/
+.monitor:before {
+   content: '';
+   width: 70px;
+   height: 60px;
+   background: #bdbdbd;
+   position: absolute;
+   left: 50%;
+   bottom: -35px;
+   transform: perspective(100px) translateX(-50%) rotateX(25deg) skewX(7deg);
+   z-index: -1;
+   transform-origin: bottom;
+}
 
-/*.monitor:after {*/
-/*    content: '';*/
-/*    width: 140px;*/
-/*    height: 15px;*/
-/*    background: #d8d8d8;*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    bottom: -50px;*/
-/*    transform: translateX(-50%);*/
-/*    z-index: -1;*/
-/*    transform-origin: bottom;*/
-/*}*/
+.monitor:after {
+     content: '';
+    width: 140px;
+    height: 15px;
+    background: #d8d8d8;
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+    z-index: -1;
+    transform-origin: bottom;
+}
 
 .monitor span {
     position: absolute;
@@ -115,14 +121,15 @@ body {
     transform: translateX(-50%);
     color: #d8d8d8;
     size: 5px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 .monitor p {
     text-align: center;
     color: #d8d8d8;
     font-size: 80%;
-    font-family: 'Open Sans', sans-serif;
+    margin-top: 15px;
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 .monitor img {
@@ -137,14 +144,33 @@ h1 {
     font-family: 'Open Sans', sans-serif;
 }
 
+.monitor .button{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	padding: 9px 22px;
+	border-radius: 30px;
+    position: absolute;
+    top: 35%;
+    left: 38%;
+    align-items: center;
+    transition: .4s; 
+}
+.monitor .button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+
 .footer {
     position: fixed;
-    left: 35px;
-    bottom: 5px;
+    align-items: center;
+    bottom: 15px;
     right: 35px;
     width: 95%;
     text-align: center;
-    color: lightgray;
+    color: white;
     font-family: 'Open Sans', sans-serif;
 }
-
