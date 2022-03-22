@@ -118,6 +118,10 @@ body {
     position: flex;
     width: 500px;
     height: 300px;
+@media (max-width : 450px) {
+    width: 464px;
+    height: 276px;  
+}
     align-items: center;
     background: #000;
     border-bottom: 30px solid #d8d8d8;
