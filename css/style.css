@@ -88,7 +88,7 @@ body {
         font-family: 'Open Sans', sans-serif;
     }
 
-    .button{
+    .button2{
         background-color:#f9004d;
         color: white;
         text-decoration: none;
@@ -101,7 +101,7 @@ body {
         align-items: center;
         transition: .4s; 
     }
-    .button:hover{
+    .button2:hover{
         background-color: transparent;
         border: 2px solid #f9004d;
         cursor: pointer;
@@ -138,11 +138,30 @@ body {
         font-family: 'Open Sans', sans-serif;
     }
 
-    .button{
+    .button2{
         display: none;
     }
-    .button:hover{
+    .button2:hover{
         display: none;
+    }
+
+    .monitor .button{
+        background-color:#f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        padding: 9px 22px;
+        border-radius: 30px;
+        position: absolute;
+        top: 35%;
+        left: 38%;
+        align-items: center;
+        transition: .4s; 
+    }
+    .monitor .button:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
     }
 }
 
@@ -212,23 +231,4 @@ h1 {
     text-align: center;
     color: whitesmoke;
     font-family: 'Open Sans', sans-serif;
-}
-
-.monitor .button{
-	background-color:#f9004d;
-	color: white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	padding: 9px 22px;
-	border-radius: 30px;
-    position: absolute;
-    top: 35%;
-    left: 38%;
-    align-items: center;
-    transition: .4s; 
-}
-.monitor .button:hover{
-	background-color: transparent;
-	border: 2px solid #f9004d;
-	cursor: pointer;
 }
