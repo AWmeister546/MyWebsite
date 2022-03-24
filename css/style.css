@@ -15,13 +15,6 @@ body {
     transform: translateY(-50%);
 }
 
-.title.dynamic-text {
-    margin-left: 15px;
-    line-height: 80px;
-    height: 90px;
-    overflow: hidden;
-}
-
 .title p {
     text-align: center;
     color: #d8d8d8;
@@ -31,44 +24,6 @@ body {
     top: 5%;
 }
 
-.dynamic-text li {
-    list-style: none;
-    font-size: 50px;
-    font-weight: 500;
-    color: #d8d8d8;
-    font-family: 'Open Sans', sans-serif;
-    top: 0;
-    animation: slide 6s steps(1) infinite;
-}
-
-@keyframes slide {
-    100% {
-        top: -360px;
-    }
-}
-
-.dynamic-text li span {
-    position: relative;
-}
-
-.dynamic-text li span::after {
-    content: "";
-    position: absolute;
-    background-color: #262525;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-left: 2px solid white;
-    animation: typing 20s steps(20) infinite;
-}
-
-@keyframes typing {
-    100% {
-        left: 100%;
-        margin: 0 -35px 0 35px;
-    }
-}
-
 .center {
     position: absolute;
     top: 35%;
@@ -76,29 +31,90 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .monitor {
         position: flex;
-        width: 500px;
-        height: 300px;
+        width: 350px;
+        height: 150px;
         align-items: center;
         background: #000;
         border-bottom: 30px solid #d8d8d8;
         border-radius: 10px;
         margin-top: 50px;
         margin-bottom: 5px;
+        margin-left: 125px;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .monitor span {
         position: absolute;
-        left: 50%;
-        bottom: 82%;
+        top: -10%;
         margin-bottom: 15px;
+        margin-top: 25px;
+        text-align: center;
         transform: translateX(-50%);
         color: #d8d8d8;
         size: 5px;
         font-family: 'Hammersmith One', sans-serif;
     }
+
+    .monitor p {
+        text-align: center;
+        margin: 0 auto;
+        margin-left: 3px;
+        color: #d8d8d8;
+        font-size: 80%;
+        font-family: 'Hammersmith One', sans-serif;
+    }
+
+    .monitor img {
+        display: none;
+    }
+
+    .monitor .button{
+        display: none;
+    }
+    .monitor .button:hover {
+        display: none;
+    }
+
+    .footer {
+        position: absolute;
+        align-items: center;
+        bottom: 15px;
+        text-align: center;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .button{
+        background-color:#f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        padding: 9px 22px;
+        border-radius: 30px;
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        align-items: center;
+        transition: .4s; 
+    }
+    .button:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+    }
+    
+    p {
+        text-align: center;
+        color: #d8d8d8;
+        font-size: 80%;
+        margin-top: 15px;
+        font-family: 'Hammersmith One', sans-serif;
+    }
+    
 }
 
 @media only screen and (min-width: 600px) {
@@ -112,17 +128,30 @@ body {
         border-radius: 10px;
         margin-bottom: 5px;
     }
-} */
 
-.monitor {
-    position: flex;
-    width: 500px;
-    height: 300px;
-    align-items: center;
-    background: #000;
-    border-bottom: 30px solid #d8d8d8;
-    border-radius: 10px;
-    margin-bottom: 5px;
+    .footer {
+        position: absolute;
+        align-items: center;
+        bottom: 15px;
+        text-align: center;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .button{
+        display: none;
+    }
+    .button:hover{
+        display: none;
+    }
+}
+
+.monitor p {
+    text-align: center;
+    color: #d8d8d8;
+    font-size: 80%;
+    margin-top: 15px;
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 .monitor span {
@@ -173,14 +202,6 @@ body {
     font-family: 'Hammersmith One', sans-serif;
 }
 
-.monitor p {
-    text-align: center;
-    color: #d8d8d8;
-    font-size: 80%;
-    margin-top: 15px;
-    font-family: 'Hammersmith One', sans-serif;
-}
-
 .monitor img {
     position: absolute;
     bottom: 40%;
@@ -210,16 +231,4 @@ h1 {
 	background-color: transparent;
 	border: 2px solid #f9004d;
 	cursor: pointer;
-}
-
-
-.footer {
-    position: fixed;
-    align-items: center;
-    bottom: 15px;
-    right: 35px;
-    width: 95%;
-    text-align: center;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
 }
