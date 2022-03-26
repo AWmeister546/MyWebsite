@@ -33,7 +33,9 @@ body {
 
 @media only screen and (max-width: 600px) {
     .monitor {
-        position: flex;
+        position: absolute;
+        left: 50%;
+        top: 35%;
         width: 350px;
         height: 150px;
         align-items: center;
