@@ -225,9 +225,7 @@ body {
 }
 
 .monitor img {
-    position: absolute;
-    bottom: 40%;
-    left: 37%;
+    display: none;
 }
 
 h1 {
